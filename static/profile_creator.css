@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1bff00, #00ffc9);
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: flex-start;
+    padding-top: 30px; /* Add space at the top */
+    height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    gap: 50px; /* Increase space between form and preview */
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    color: white;
+}
+
+.preview-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px; /* Increase preview container width */
+    color: white;
+    text-align: center;
+}
+
+.profile-preview {
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #000000, #000000);
+    margin-top: 10px;
+    width: 90%; /* Adjust the width to maintain responsiveness */
+    aspect-ratio: 9 / 16; /* Set the 9:16 aspect ratio */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input[type="text"],
+textarea,
+input[type="color"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for added links */
+#linkList {
+    margin-top: 10px;
+}
+
+.link-item {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.link-item:hover {
+    background-color: #444;
+}
+
+#previewLinks a {
+    display: block;
+    color: #87CEFA;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+#previewLinks a:hover {
+    color: #ffcccb;
+}
