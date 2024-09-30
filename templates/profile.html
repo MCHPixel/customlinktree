@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ username }}'s Profile</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        /* Apply the dynamic gradient background */
+        body {
+            background: linear-gradient(to bottom, {{ bg_color_start }}, {{ bg_color_end }});
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>{{ username }}'s Profile</h1>
+    <p>{{ bio }}</p>
+
+    <h2>Links:</h2>
+    <ul class="link-list">
+        {% for link in links %}
+        <li>
+            <a href="{{ link.url }}" target="_blank" class="link-box">{{ link.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="/" class="back-link">Back to All Users</a>
+</div>
+</body>
+</html>
